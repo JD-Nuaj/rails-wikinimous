@@ -11,4 +11,15 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # get /articles to index : afficher la liste
+  # get /articles/new to new : afficher form création article
+  # post /articles to create : enregistrer nouvel article
+  # get /articles/:id to show : affiche un article
+  # get /articles/:id/edit to edit : affiche le form modifier article
+  # get /articles/:id to update : mettre à jour un article
+  # get /articles/:id to destroy : supprime un article
+
+  resources :articles
+
 end
